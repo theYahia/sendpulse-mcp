@@ -1,6 +1,6 @@
 {
   "name": "@theyahia/sendpulse-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for SendPulse API — mailing lists, email sending, statistics. OAuth2 auth.",
   "type": "module",
   "main": "dist/index.js",
@@ -32,9 +32,22 @@
     "access": "public"
   },
   "keywords": [
-    "mcp", "mcp-server", "model-context-protocol", "modelcontextprotocol",
-    "claude", "ai", "llm", "anthropic", "cursor", "ai-tools", "ai-agent",
-    "russian-api", "sendpulse", "email", "mailing", "marketing"
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "modelcontextprotocol",
+    "claude",
+    "ai",
+    "llm",
+    "anthropic",
+    "cursor",
+    "ai-tools",
+    "ai-agent",
+    "russian-api",
+    "sendpulse",
+    "email",
+    "mailing",
+    "marketing"
   ],
   "license": "MIT",
   "repository": {
