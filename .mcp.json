@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "sendpulse": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@theyahia/sendpulse-mcp"
+      ],
+      "env": {
+        "SENDPULSE_ID": "YOUR_ID",
+        "SENDPULSE_SECRET": "YOUR_SECRET"
+      }
+    }
+  }
+}
