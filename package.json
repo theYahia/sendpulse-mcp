@@ -1,6 +1,6 @@
 {
   "name": "@theyahia/sendpulse-mcp",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "MCP server for SendPulse API — mailing lists, email sending, statistics. OAuth2 auth.",
   "type": "module",
   "main": "dist/index.js",
