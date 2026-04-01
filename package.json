@@ -1,7 +1,7 @@
 {
   "name": "@theyahia/sendpulse-mcp",
-  "version": "1.1.1",
-  "description": "MCP server for SendPulse — email campaigns, mailing lists (Russia)",
+  "version": "1.1.0",
+  "description": "MCP server for SendPulse API — mailing lists, email sending, statistics. OAuth2 auth.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -17,7 +17,9 @@
     "build": "tsc",
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
@@ -26,7 +28,8 @@
   "devDependencies": {
     "@types/node": "^22.0.0",
     "tsx": "^4.19.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.2"
   },
   "publishConfig": {
     "access": "public"
@@ -47,9 +50,7 @@
     "sendpulse",
     "email",
     "mailing",
-    "marketing",
-    "api",
-    "typescript"
+    "marketing"
   ],
   "license": "MIT",
   "repository": {
@@ -57,5 +58,6 @@
     "url": "https://github.com/theYahia/sendpulse-mcp.git"
   },
   "homepage": "https://github.com/theYahia/sendpulse-mcp#readme",
-  "author": "theYahia (https://github.com/theYahia)"
+  "author": "theYahia (https://github.com/theYahia)",
+  "mcpName": "io.github.theYahia/sendpulse-mcp"
 }
