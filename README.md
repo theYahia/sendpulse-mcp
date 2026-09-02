@@ -1,6 +1,6 @@
-# @theyahia/sendpulse-mcp
+# SendPulse MCP — рассылки, SMTP и push-уведомления из нейросети
 
-Production-grade MCP server for SendPulse API — mailing lists, campaigns, templates, SMTP, push notifications. OAuth2 auth.
+Если вы искали, как отправить email-кампанию прямо из диалога с ИИ, наполнить адресную книгу, отправить транзакционное письмо через SMTP или разослать web-push без ручной работы в кабинете — это оно. 11 инструментов поверх SendPulse API с авторизацией OAuth2: адресные книги, кампании, шаблоны, SMTP и push-уведомления.
 
 [![npm](https://img.shields.io/npm/v/@theyahia/sendpulse-mcp)](https://www.npmjs.com/package/@theyahia/sendpulse-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -117,3 +117,4 @@ Show push notification websites
 ## License
 
 MIT
+
