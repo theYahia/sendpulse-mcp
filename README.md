@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/@theyahia/sendpulse-mcp)](https://www.npmjs.com/package/@theyahia/sendpulse-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Installation
+## Установка
 
 ### Claude Desktop
 
@@ -38,64 +38,64 @@ claude mcp add sendpulse -e SENDPULSE_ID=id -e SENDPULSE_SECRET=secret -- npx -y
 npx -y @smithery/cli install @theyahia/sendpulse-mcp --client claude
 ```
 
-### Streamable HTTP (remote / multi-client)
+### Streamable HTTP (удалённый сервер / несколько клиентов)
 
 ```bash
 npx @theyahia/sendpulse-mcp --http
-# Listening on port 3000 (override with PORT env)
-# POST /mcp — MCP endpoint
-# GET /health — health check
+# Слушает порт 3000 (переопределяется переменной PORT)
+# POST /mcp — эндпоинт MCP
+# GET /health — проверка состояния
 ```
 
-## Auth
+## Авторизация
 
-OAuth 2.0 client credentials flow. Set `SENDPULSE_ID` and `SENDPULSE_SECRET` from your [SendPulse account settings](https://login.sendpulse.com/settings/#api).
+OAuth 2.0, поток client credentials. Задайте `SENDPULSE_ID` и `SENDPULSE_SECRET` из [настроек аккаунта SendPulse](https://login.sendpulse.com/settings/#api).
 
-Token endpoint: `POST https://api.sendpulse.com/oauth/access_token` with `grant_type=client_credentials`.
+Эндпоинт токена: `POST https://api.sendpulse.com/oauth/access_token` с `grant_type=client_credentials`.
 
-Tokens are cached and auto-refreshed.
+Токены кэшируются и обновляются автоматически.
 
-## Tools (11)
+## Инструменты (11)
 
-### Mailing Lists
-| Tool | Description |
+### Адресные книги
+| Инструмент | Описание |
 |------|-------------|
-| `get_mailing_lists` | List all mailing lists (address books) with subscriber counts |
+| `get_mailing_lists` | Все адресные книги со счётчиками подписчиков |
 
-### Campaigns
-| Tool | Description |
+### Кампании
+| Инструмент | Описание |
 |------|-------------|
-| `send_email` | Create and send an email campaign to a mailing list |
-| `list_campaigns` | List email campaigns with pagination |
-| `get_campaign_statistics` | Campaign stats: sent, opens, clicks, open rate, click rate |
+| `send_email` | Создать и отправить email-кампанию по адресной книге |
+| `list_campaigns` | Список email-кампаний с пагинацией |
+| `get_campaign_statistics` | Статистика кампании: отправлено, открытия, клики, open rate, click rate |
 
-### Templates
-| Tool | Description |
+### Шаблоны
+| Инструмент | Описание |
 |------|-------------|
-| `list_templates` | List email templates (own or SendPulse system templates) |
-| `get_template` | Get template details by ID |
+| `list_templates` | Список шаблонов писем (свои или системные шаблоны SendPulse) |
+| `get_template` | Подробности шаблона по ID |
 
 ### SMTP
-| Tool | Description |
+| Инструмент | Описание |
 |------|-------------|
-| `smtp_send_email` | Send a transactional email via SMTP service |
-| `smtp_list_emails` | List sent SMTP emails with pagination |
+| `smtp_send_email` | Отправить транзакционное письмо через сервис SMTP |
+| `smtp_list_emails` | Список отправленных SMTP-писем с пагинацией |
 
-### Push Notifications
-| Tool | Description |
+### Push-уведомления
+| Инструмент | Описание |
 |------|-------------|
-| `list_push_websites` | List websites with push subscriptions |
-| `get_push_statistics` | Push notification statistics for a website |
-| `create_push_task` | Create a push notification for a website |
+| `list_push_websites` | Список сайтов с push-подписками |
+| `get_push_statistics` | Статистика push-уведомлений по сайту |
+| `create_push_task` | Создать push-уведомление для сайта |
 
-## Skills
+## Навыки (Skills)
 
-| Skill | Trigger |
+| Навык | Триггер |
 |-------|---------|
-| `skill-send-email` | "Отправь email через SendPulse" |
-| `skill-list-stats` | "Статистика подписчиков" |
+| `skill-send-email` | «Отправь email через SendPulse» |
+| `skill-list-stats` | «Статистика подписчиков» |
 
-## Development
+## Разработка
 
 ```bash
 npm install
@@ -103,18 +103,17 @@ npm run build
 npm test
 ```
 
-## Example Prompts
+## Примеры промптов
 
 ```
-Show all mailing lists
-Send an email to list 12345
-What are the stats for my last campaign?
-List my email templates
-Send a transactional email to user@example.com
-Show push notification websites
+Покажи все адресные книги
+Отправь письмо по списку 12345
+Какая статистика у моей последней кампании?
+Покажи мои шаблоны писем
+Отправь транзакционное письмо на user@example.com
+Покажи сайты с push-уведомлениями
 ```
 
-## License
+## Лицензия
 
 MIT
-
